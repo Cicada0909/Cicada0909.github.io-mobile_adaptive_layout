@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "Bely";
+    src: url("./assets/Bely\ Display\ W00\ Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 0 56px;
+}
+
+.contributors {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contributors-text, .contributors-banners {
+    flex: 1;
+}
+
+.contributors-heading {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Bely";
+}
+
+.contributors-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contributors-par {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.contributors-icon {
+    align-self: flex-start;
+}
+
+.contributors-banners {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.contributors-row {
+    display: flex;
+    gap: 12px;
+}
+
+.contributors-row img:nth-child(2) {
+    transform: translateY(24px);
+}
+
+@media screen and (max-width: 475px) {
+    main {
+        padding: 0 16px;
+    }
+
+    .contributors {
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 0;
+    }
+
+    .contributors-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contributors-heading {
+        font-size: 30px;
+    }
+
+    .contributors-text {
+        gap: 16px;
+    }
+
+    .contributors-banners {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contributors-row img {
+        max-width: 100%;
+    }
+
+    .contributors-row {
+        flex-direction: column;
+    }
+
+    .contributors-row img:nth-child(2) {
+        transform: none;
+    }
+}
+
+.enterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    padding: 0 55px;
+    margin: 0 auto;
+    gap: 48px;
+}
+
+.enterprise__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.enterprise__title {
+    font-size: 48px;
+    font-family: "Bely";
+    text-align: center;
+}
+
+.enterprise__text {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.enterprise__blocks {
+    display: flex;
+    flex: 1;
+}
+
+.block-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mt-21 {
+    margin-top: 21px;
+}
+
+.wrapper-block {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.wrapper-enterprise {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 160px 0 44px 0;
+}
+
+.block-title {
+    font-size: 18px;
+    font-family: 700;
+    font-weight: 600;
+}
+
+.block-text {
+    font-size: 16px;
+}
+
+.element-footer {
+    width: 63px;
+    height: 32px;
+    border-radius: 40px;
+    background-color: #71A894;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-text {
+    font-weight: 600;
+}
+
+.enterprise__blocks {
+    display: flex;
+    gap: 24px;
+}
+
+.enterprise__block {
+    flex: 1;
+    gap: 18px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.enterprise__button {
+    all: unset;
+    border-radius: 8px;
+    width: 136px;
+    height: 64px;
+    background-color: #303031;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enterprise__button:hover {
+    transform: scale(1.1);
+}
+
+.enterprise__button:active {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 30px 0 rgb(99, 72, 255);
+}
+
+.divider {
+    background-image: url(./assets/sec3/Divider_red-left-right-8px.png);
+    height: 72px;
+}
+
+
