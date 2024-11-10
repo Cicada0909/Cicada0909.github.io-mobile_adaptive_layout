@@ -322,8 +322,7 @@ main {
 
     .open-enterprise {
         flex-direction: column;
-        padding: 44px 55px 120px 55px;
-        gap: ;
+        padding: 30px 55px 120px 55px;
     }
 
     .open-enterprise__items {
