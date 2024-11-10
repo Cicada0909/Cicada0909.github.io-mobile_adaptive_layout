@@ -198,6 +198,11 @@ main {
     border-radius: 16px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
     background: #fff;
+    transition: 0.3s;
+}
+
+.enterprise__block:hover {
+    transform: scale(1.05);
 }
 
 .enterprise__button {
@@ -228,6 +233,59 @@ main {
     height: 72px;
 }
 
+.open-enterprise {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 44px 55px 120px 55px;
+}
+
+.open-enterprise__items, .open-enterprise__image {
+    flex: 1;
+}
+
+.open-enterprise__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.open-enterprise__title {
+    font-family: "Bely";
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.open-enterprise__text {
+    font-size: 18px;
+}
+
+.open-enterprise__button {
+    all: unset;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    width: 219px;
+    height: 64px;
+    background-color: #71A894;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.open-enterprise__image {
+    max-width: 100%;
+}
+
+.adaptive475 {
+    display: none;
+}
+
+
 @media screen and (max-width: 475px) {
     .enterprise__blocks {
         flex-direction: column;
@@ -249,6 +307,50 @@ main {
 
     .wrapper-enterprise {
         margin: 50px 0 30px 0;
+    }
+
+    .open-enterprise {
+        flex-direction: column;
+        padding: 44px 55px 120px 55px;
+        gap: ;
+    }
+
+    .open-enterprise__items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .open-enterprise__title {
+        font-size: 30px;
+
+    }
+    
+    .open-enterprise__text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .open-enterprise__image {
+        display: none;
+    }
+
+    .adaptive475 {
+        display: block;
+    }
+
+    .open-enterprise__button {
+        font-size: 14px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .enterprise__button {
+        font-size: 14px;
+        width: 110px;
+        height: 50px;
     }
 }
 
